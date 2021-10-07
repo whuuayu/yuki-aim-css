@@ -2165,28 +2165,7 @@ td[style*="#fff"] {
 }
 
 #menuClassPicker0::before {
-    content: "changed variable names, if anything appears off, reinstall from taekr.carrd.co";
+    content: "migrated website :)";
     display: block;
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
 }
-
-#menuClassPicker1::before {
-    content: "menu decal and logo color now match accent color";
-    color: var(--accent);
-    display: block;
-    margin-bottom: 8px;
-}
-
-#menuClassPicker2::before {
-    content: "updated logo";
-    display: block;
-    margin-bottom: 8px;
-}
-
-/*
-#menuClassPicker3::before {
-    content: "Added Donator List";
-    display: block;
-}
-
-*/
