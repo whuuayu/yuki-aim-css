@@ -1,0 +1,775 @@
+/*Last Updated: 2021-4-7*/
+
+/*Please DO NOT REUSE ANY of the CODE below without my permission, thank you*/
+
+/*Section I: Frame*/
+
+/*Text*/
+
+* {
+    font-family: gamefont, JP;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent);
+}
+
+.blueLink {
+    color: var(--accent) !important;
+}
+
+a:hover {
+    color: var(--secondary-text);
+    text-decoration: underline;
+}
+
+input {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+select {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+option {
+    background-color: var(--bg-color);
+}
+
+.rainbowText {
+    background-image: linear-gradient(to right, #2e62ff, #0099ff , #00ff00, #ffde3b, #ff3399, #6666ff);
+    animation: gradient-border 2s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+}
+
+@keyframes gradient-border {
+    0%, 200% {
+        background-position: 0 0;
+    }
+    99.999999999999999% {
+        background-position: -130% 0;
+    }
+} 
+
+/*No one uses These*/
+
+#aHolder, #onetrust-consent-sdk, #iosDB, #androidDB, #steamDB, #rightABox {
+    display: none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Base*/
+
+#uiBase {
+    background-image: linear-gradient(0deg, var(--accent) 140px, var(--bg-color) 140px);
+    opacity: 1;
+}
+
+#uiBase::after {
+    content: " ";
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.discordapp.net/attachments/785234774427959349/818707568758882325/YUKI_BITCH_JPEG3.png);
+    background-size: 240px;
+    background-repeat: no-repeat;
+    background-position: right calc(100% - 110px);
+    z-index: 2;
+    pointer-events: none;
+    filter: drop-shadow(2px 2px 0px var(--bg-color)) drop-shadow(-2px -2px 0px var(--bg-color)) drop-shadow(2px -2px 0px var(--bg-color)) drop-shadow(-2px 2px 0px var(--bg-color));
+    opacity: var(--decals);
+}
+
+/*Navigation*/
+
+#navBar {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+}
+
+#navTitle {
+    font-size: 0;
+    color: transparent;
+    background-image: url(https://i.imgur.com/WgkzcKF.png);
+    display: block;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 170px;
+    top: 0;
+}
+
+#profileLogin {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#searchPInput, #searchBtn {
+    border-radius: 0;
+}
+
+#hubBox {
+    display: none;
+}
+
+.leaderNav2 {
+    background-color: var(--secondary-bg);
+    margin-top: -26px;
+}
+
+.leaderBtn2 {
+    background-color: transparent !important;
+}
+
+/*Windows*/
+
+.scrollItem {
+    font-size: 32px;
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 8px 8px var(--accent);
+}
+
+.scrollItem * {
+    color: var(--secondary-text);
+}
+
+/*Sidebar*/
+
+#chatScroller {
+    background: transparent;
+}
+
+.chatBlobImg {
+    background-color: var(--accent);
+}
+
+/*Popups*/
+
+#popupBack {
+    background-color: transparent;
+    backdrop-filter: grayscale(1) contrast(0.5);
+}
+
+#loginPop {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 8px 8px var(--accent);
+}
+
+.accountButton {
+    background-color: transparent;
+}
+
+/*Section II: Leaderboard*/
+
+.lName {
+    color: var(--secondary-text);
+}
+
+.leaderText a[style="color:rgba(0,0,0,0.4)"] {
+    color: var(--secondary-text) !important;
+}
+
+.leaderText a[style="color:#292929"] {
+    background-image: linear-gradient(-60deg, var(--accent) 50%, var(--secondary-text) 50%);
+    color: transparent !important;
+    -webkit-background-clip: text;
+}
+
+/*Section III: Profile Page*/
+
+.scrollItemNew {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.scrollItemHead {
+    font-size: 24px;
+}
+
+.scrollItemNew[style="box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;"] span, .scrollItemNew[style="box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;"] div {
+    color: var(--text-color) !important;
+}
+
+.profileTabs {
+    background-color: transparent;
+}
+
+.profileTab {
+    font-size: 20px;
+    color: var(--text-color);
+    box-shadow: none !important;
+}
+
+.pTabA {
+    color: var(--accent);
+}
+
+.profileTab {
+    font-size: 20px;
+}
+
+.pTabA {
+    box-shadow: inset 0 -4px rgba(0, 0, 0, 0.9);
+}
+
+.pTabA:hover {
+    box-shadow: inset 0 -4px rgba(0, 0, 0, 0.9);
+}
+
+.toggleView {
+    border-bottom: 4px solid;
+}
+
+.collapsed {
+    height: 34px !important;
+}
+
+.profilePic {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    padding: 4px;
+    width: 102px;
+    height: 102px;
+    box-shadow: 4px 4px var(--accent);
+}
+
+#reprtBtn {
+    color: var(--accent) !important;
+}
+
+#shareBtn {
+    color: var(--accent) !important;
+}
+
+#reprtBtn, #shareBtn {
+    text-shadow: 1px 1px #000;
+}
+
+#tradeBtn {
+    border: none;
+    background-color: var(--secondary-bg);
+    border-radius: 0;
+    color: var(--secondary-text) !important;
+    box-shadow: 4px 4px #2196f3;
+}
+
+#giftBtn {
+    border: none;
+    background-color: var(--secondary-bg);
+    border-radius: 0;
+    color: var(--secondary-text) !important;
+    box-shadow: 4px 4px #41c300;
+}
+
+#followBtn {
+    border: none;
+    background-color: var(--secondary-bg) !important;
+    border-radius: 0;
+    color: var(--secondary-text) !important;
+    box-shadow: 4px 4px #40c4ff;
+}
+
+.xpBar {
+    margin: 0;
+    width: -webkit-fill-available;
+    margin-top: 24px;
+    border-radius: 0;
+    background-color: var(--bg-color);
+    border: 4px solid var(--text-color);
+}
+
+.xpBarB {
+    background-color: var(--accent);
+}
+
+.xpBarV {
+    display: none;
+}
+
+.pSt {
+    border-radius: 0;
+    border: none;
+    background-color: var(--secondary-bg);
+    font-size: 16px;
+    width: 156px;
+}
+
+.pSt strong {
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.scrollItemNew #skinList {
+    margin-top: 16px;
+}
+
+.classCard {
+    background-image: linear-gradient(45deg, var(--secondary-bg) 50%, var(--accent) 50%);
+    border-radius: 0;
+}
+
+.classCard::before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    right: 8px;
+    top: 8px;
+}
+
+.classXPBar {
+    background-color: var(--secondary-bg);
+    border-radius: 0;
+}
+
+.clsXPBarC {
+    display: none;
+}
+
+.clsXPBarV {
+    font-size: 12px;
+}
+
+.classImg {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.scrollItemNew div[style="margin-top:10px;margin-left: 8px;"] {
+    margin-top: 20px !important;
+}
+
+.dateBtn {
+    border-radius: 0;
+    background-color: #000 !important;
+    margin-right: 8px;
+}
+
+.dateBtn[style*="0.6"] {
+    box-shadow: 4px 4px var(--accent);
+}
+
+.graphHeader {
+    background-color: var(--secondary-bg);
+    border-radius: 0;
+}
+
+/*Section IV: Market*/
+
+.leaderBtn {
+    border-radius: 0;
+    background-color: var(--secondary-bg) !important;
+}
+
+.leaderBtn[style*="0.5"] {
+    background-color: var(--accent) !important;
+}
+
+#m_stats {
+    border-radius: 0;
+    background-color: var(--secondary-bg) !important;
+}
+
+#m_stats:hover {
+    background-color: var(--secondary-bg) !important;
+}
+
+#m_stats .material-icons {
+    font-size: 33px !important;
+}
+
+#m_blackm {
+    border-radius: 0;
+    background-color: var(--secondary-bg) !important;
+}
+
+#m_blackm img {
+    filter: brightness(5);
+    width: 36px !important;
+}
+
+#invSortB {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+}
+
+#invSortB:hover {
+    background-color: var(--secondary-bg);
+}
+
+#invValue, #invTrack {
+    background-color: var(--secondary-bg);
+    border-radius: 0;
+}
+
+#marketSearchB {
+    border-radius: 0;
+    background-color: var(--secondary-bg) !important;
+}
+
+#filterPop * {
+    border-radius: 0;
+}
+
+#filterPop {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 8px 8px var(--accent);
+}
+
+.sliderSml2:before {
+    border-radius: 0;
+}
+
+input:checked+.sliderSml2, #filterTog {
+    background-color: var(--accent) !important;
+}
+
+#filterRBtn, #resetFBtn {
+    background-color: transparent !important;
+}
+
+.marketCard {
+    border-width: 0 !important;
+    box-shadow: 6px 6px;
+    border-radius: 0;
+    background-color: #000;
+}
+
+.marketCard[style*="#292929"] {
+    color: #fff !important;
+    box-shadow: 6px 6px #4444;
+}
+
+.cardActions {
+    transition-duration: 0.25s;
+    backdrop-filter: blur(4px);
+    background: rgba(0,0,0,.4);
+}
+
+#popupContent {
+    border-radius: 0;
+    box-shadow: 8px 8px var(--accent);
+    background-color: var(--secondary-bg);
+}
+
+.pItemName, .pItemRar, .pItemDesc, .pItemOwn, .pItemTime {
+    color: var(--secondary-text);
+}
+
+.pItemButton {
+    border-radius: 0;
+    background-color: transparent !important;
+}
+
+.popupImgH {
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 8px !important;
+    padding: 4px;
+}
+
+.popupImgInfo {
+    background-color: transparent !important;
+}
+
+/*Rare Items List*/
+
+.statItem {
+    color: var(--secondary-text) !important;
+}
+
+.statImgH {
+    border-radius: 0;
+    border-width: 4px !important;
+    background-color: var(--bg-color);
+}
+
+.statFind {
+    font-size: 16px;
+    background-color: transparent;
+    padding: 0;
+}
+
+#itemViewPop {
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.25);
+    border: 2px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(4px);
+}
+
+.itemViewName, .itemViewSea {
+    color: rgba(0,0,0,0.25) !important;
+    background-color: transparent;
+}
+
+#itemInfoBtn {
+    background-color: rgba(0,0,0,.12);
+    border-radius: 0;
+}
+
+/*Trading*/
+
+.tradeNavBtn {
+    background-color: transparent !important;
+    border-radius: 0;
+    color: var(--text-color) !important;
+}
+
+#oProf {
+    color: var(--accent);
+}
+
+#offerPop {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 8px 8px var(--accent);
+}
+
+.tListN {
+    border-radius: 0;
+    font-size: 24px;
+}
+
+.tListN.inv {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 4px;
+    color: #fff;
+}
+
+#tMsg {
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.tItemHolder {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/*Section V: Social Feed*/
+
+#adBox {
+    height: unset;
+    top: 85px;
+    bottom: 0;
+    transform: translateY(100%);
+    color: #fff;
+    pointer-events: all;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+
+#adBox::before {
+    display: flex;
+    content: "eject";
+    position: absolute;
+    font-family: 'Material Icons';
+    font-size: 48px;
+    bottom: 100%;
+    right: calc(50% - 24px);
+    padding-bottom: 20px;
+}
+
+#adBox:hover {
+    transform: translateY(0);
+    color: transparent;
+}
+
+#leftAdHol, #rightAdHol {
+    top: 85px;
+}
+
+#rightFollBox {
+    margin: 0;
+}
+
+#leftABox, #leftYTBox, #rightABox, #rightFollBox {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 6px 6px var(--accent);
+}
+
+.reqFollB {
+    border-radius: 0;
+    background-color: var(--accent) !important;
+}
+
+.reqFollB:hover {
+    opacity: 0.75;
+}
+
+#postInput {
+    width: -webkit-fill-available;
+}
+
+#postButton {
+    border-radius: 0;
+    border: 4px solid;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.feedTab {
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.socPost {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+    box-shadow: 8px 8px var(--accent);
+}
+
+.postSubInfo {
+    color: #fff;
+}
+
+.postTime {
+    color: #fff;
+}
+
+.likesHolder * {
+    color: var(--secondary-text);
+}
+
+.likesHolder {
+    color: var(--secondary-text);
+}
+
+.likeBtn {
+    color: var(--secondary-text) !important;
+}
+
+.postContent {
+    color: #fff;
+}
+
+.postContent * {
+    color: #fff;
+}
+
+.shareBtnHol {
+    background-color: #000;
+}
+
+/*Section VI: Maps/Mods*/
+
+a[onclick="windows[1].searchMods()"], a[onclick="windows[0].searchMaps()"] {
+    border-radius: 0 !important;
+    padding: 10px 15px !important;
+}
+
+.mapListItem {
+    border-color: transparent;
+}
+
+#editorDB {
+    display: none;
+}
+
+.loadMoreD {
+    border-radius: 0;
+    background-color: var(--secondary-bg);
+}
+
+/*Section VII: Clan Wars*/
+
+#clanwarsProg .xpBarB {
+    display: none;
+}
+
+#clanwarsProg .xpBarV {
+    display: block;
+    text-shadow: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+#clanwarsProg {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.regionCard {
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 32px;
+}
+
+/*Section VIII: Settings*/
+
+#settingsPop {
+    background-color: var(--bg-color);
+    border-radius: 0;
+    box-shadow: 8px 8px var(--accent);
+}
+
+.settName, .settNameSmall {
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.sliderM {
+    background-color: rgba(0,0,0,0.12);
+    height: 12px;
+}
+
+.sliderM::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--bg-color);
+}
+
+.sliderVal {
+    background-color: #000;
+    border-radius: 0px;
+}
+
+.slider {
+    background-color: transparent !important;
+}
+
+.slider:before {
+    position: absolute;
+    content: "無";
+    line-height: 36px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+
+input:checked+.slider:before {
+    transform: unset;
+    content: "ハイ！";
+    font-size: 24px;
+    color: var(--accent);
+    overflow: hidden;
+}
+
+.terms {
+    display: none;
+}
