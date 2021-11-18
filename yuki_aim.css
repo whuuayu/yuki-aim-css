@@ -2165,7 +2165,7 @@ td[style*="#fff"] {
 }
 
 #menuClassPicker0::before {
-    content: "edited main_custom.css file, feel free to reinstall :)";
+    content: "edited main_custom.css file, reinstall is recommended :)";
     display: block;
     margin-bottom: 8px;
 }
