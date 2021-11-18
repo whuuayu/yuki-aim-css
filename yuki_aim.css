@@ -2155,7 +2155,7 @@ td[style*="#fff"] {
 }
 
 #hiddenClasses::before {
-    content: "2021-10-7";
+    content: "2021-11-18";
     display: block;
     padding: 4px 4px 0px 4px;
     margin-bottom: 8px;
@@ -2165,7 +2165,12 @@ td[style*="#fff"] {
 }
 
 #menuClassPicker0::before {
-    content: "migrated website :)";
+    content: "edited main_custom.css file, feel free to reinstall :)";
     display: block;
-    /*margin-bottom: 8px;*/
+    margin-bottom: 8px;
+}
+
+#menuClassPicker1::before {
+    content: "this will be the last time changelogs will appear here, you're welcome";
+    display: block;
 }
