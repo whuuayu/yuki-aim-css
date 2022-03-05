@@ -253,7 +253,7 @@ a {
 }
 
 #instructionHolder {
-    z-index: -1;
+    z-index: 0;
     backdrop-filter: grayscale(1);
 }
 
@@ -1448,6 +1448,7 @@ input[type=color] {
     bottom: unset;
     top: 100px;
     display: block;
+    z-index: 2;
 }
 
 #mapInfo {
