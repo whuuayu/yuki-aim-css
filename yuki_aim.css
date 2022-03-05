@@ -2149,6 +2149,7 @@ td[style*="#fff"] {
     text-align: right;
     align-items: flex-end;
     max-width: 280px;
+    z-index: 2;
 }
 
 #hiddenClasses * {
